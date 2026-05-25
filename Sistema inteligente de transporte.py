@@ -85,9 +85,7 @@ def mostrar_reglas():
     print("7. A* garantiza ruta óptima si h(n) es admisible")
 
 def encontrar_ruta(origen, destino):
-    print(f"\n{'='*50}")
     print(f"🔍 BUSCANDO RUTA: {origen} → {destino}")
-    print(f"{'='*50}")
     
     if origen not in grafo or destino not in grafo:
         print("❌ Error: Estación no existe en la base de conocimiento")
@@ -116,10 +114,8 @@ def encontrar_ruta(origen, destino):
 # EJECUCIÓN PRINCIPAL 
 
 if __name__ == "__main__":
-    print("="*50)
     print("SISTEMA INTELIGENTE DE TRANSPORTE")
     print(f"Ejecutado: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print("="*50)
     
     # Mostrar todas las reglas
     mostrar_reglas()
@@ -133,6 +129,4 @@ if __name__ == "__main__":
     # Prueba 3
     encontrar_ruta("Calle 72", "Portal Norte")
     
-    print("\n" + "="*50)
     print("FIN DE LA EJECUCIÓN")
-    print("="*50)
